@@ -1,6 +1,6 @@
 {
   "name": "LeetCode Python",
-  "image": "mcr.microsoft.com/devcontainers/python:3.10-node",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -16,8 +16,8 @@
         "charliermarsh.ruff",
         "ms-python.black-formatter",
         "ms-python.isort",
-        "esbenp.prettier-vscode",      
-        "redhat.vscode-json-languageserver"
+        "esbenp.prettier-vscode",
+        "redhat.vscode-json"
       ],
       "settings": {
         "leetcode.defaultLanguage": "python3",
@@ -34,6 +34,11 @@
         "files.autoSave": "afterDelay",
         "workbench.startupEditor": "newUntitledFile"
       }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
     }
   },
   "postCreateCommand": "bash .devcontainer/setup.sh && node -v"
