@@ -1,0 +1,31 @@
+{
+  "name": "LeetCode Python",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "extensions": [
+    "LeetCode.vscode-leetcode",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "GitHub.copilot",
+    "formulahendry.code-runner",
+    "CoenraadS.bracket-pair-colorizer-2",
+    "aaron-bond.better-comments",
+    "usernamehw.errorlens",
+    "ms-python.flake8",
+    "charliermarsh.ruff",
+    "ms-python.black-formatter",
+    "ms-python.isort"
+  ],
+  "settings": {
+    "leetcode.defaultLanguage": "python3",
+    "python.languageServer": "Pylance",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.ruffEnabled": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh"
+}
